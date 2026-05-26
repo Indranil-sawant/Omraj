@@ -3,8 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>About Omraj Cleaning | Top Cleaning Agency in Kolhapur</title>
-    <meta name="description" content="Learn about Omraj Cleaning Services, Kolhapur's most trusted deep cleaning company. We provide 100% satisfaction with background-verified local staff." />
+    
+    <!-- SEO Optimization -->
+    <title>About Om Raj Services | Premium Tech-Enabled Home Services Platform</title>
+    <meta name="description" content="Discover the story behind Om Raj Services—Maharashtra's premium local services platform. Grounded in trust, powered by technology, and sourced locally." />
     
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -17,9 +19,9 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: "#002045",
+                        primary: "#002045", // Deep Trust Blue
                         secondary: "#0061a5",
-                        whatsapp: "#25D366",
+                        whatsapp: "#25D366", // Conversion Green
                         "whatsapp-dark": "#128C7E",
                         surface: "#f8fafc",
                         "on-surface": "#0f172a",
@@ -27,7 +29,9 @@
                         "surface-container": "#ffffff",
                         outline: "#cbd5e1"
                     },
-                    fontFamily: { sans: ["Plus Jakarta Sans", "sans-serif"] },
+                    fontFamily: {
+                        sans: ["Plus Jakarta Sans", "sans-serif"]
+                    },
                     boxShadow: {
                         'soft': '0 4px 20px -2px rgba(0, 32, 69, 0.08)',
                         'hover': '0 12px 30px -4px rgba(0, 32, 69, 0.15)',
@@ -37,23 +41,66 @@
         }
     </script>
     <style>
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
-        html { scroll-behavior: smooth; }
-        @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-fade-up { animation: fadeUp 0.6s ease-out forwards; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-up {
+            animation: fadeUp 0.6s ease-out forwards;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes float-reverse {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+
+        .animate-float {
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .animate-float-reverse {
+            animation: float-reverse 6s ease-in-out infinite 0.5s;
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface font-sans antialiased">
 
-    <!-- Top Info Bar -->
+    <!-- Top Info Bar (Desktop Only) -->
     <div class="hidden md:flex bg-primary text-white text-sm py-2 px-6 justify-between items-center max-w-[1400px] mx-auto">
         <div class="flex items-center gap-4">
-            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span> Serving Kolhapur, Sangli & Ichalkaranji</span>
-            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> Mon-Sun: 8 AM - 8 PM</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">location_on</span>
+                Serving Kolhapur, Sangli & Ichalkaranji</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span>
+                Mon-Sun: 8 AM - 8 PM</span>
         </div>
         <div class="flex items-center gap-4">
-            <a href="tel:+919876543210" class="flex items-center gap-1 hover:text-whatsapp transition-colors"><span class="material-symbols-outlined text-[16px]">call</span> +91 98765 43210</a>
-            <a href="mailto:info@omrajcleaning.in" class="flex items-center gap-1 hover:text-whatsapp transition-colors"><span class="material-symbols-outlined text-[16px]">mail</span> info@omrajcleaning.in</a>
+            <a href="tel:+919876543210" class="flex items-center gap-1 hover:text-whatsapp transition-colors"><span
+                    class="material-symbols-outlined text-[16px]">call</span> +91 98765 43210</a>
+            <a href="mailto:info@omrajcleaning.in"
+                class="flex items-center gap-1 hover:text-whatsapp transition-colors"><span
+                    class="material-symbols-outlined text-[16px]">mail</span> info@omrajcleaning.in</a>
         </div>
     </div>
 
@@ -61,9 +108,12 @@
     <header id="site-header" class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md">
         <nav class="flex justify-between items-center w-full px-6 max-w-[1400px] mx-auto h-20">
             <a href="index.html" class="text-2xl font-bold text-primary flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary text-3xl" data-weight="fill">cleaning_services</span>
+                <span class="material-symbols-outlined text-secondary text-3xl"
+                    data-weight="fill">cleaning_services</span>
                 Omraj Cleaning
             </a>
+
+            <!-- Desktop Nav -->
             <div class="hidden lg:flex items-center gap-8 font-medium">
                 <a class="text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
                 <a class="text-primary border-b-2 border-primary pb-1" href="about-us.html">About</a>
@@ -71,14 +121,20 @@
                 <a class="text-on-surface-variant hover:text-primary transition-colors" href="gallery.html">Gallery</a>
                 <a class="text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
             </div>
+
+            <!-- Desktop CTAs -->
             <div class="hidden lg:flex items-center gap-4">
-                <a href="tel:+919876543210" class="text-primary font-semibold flex items-center gap-1 border border-primary px-4 py-2 rounded-lg hover:bg-primary/5 transition-colors">
+                <a href="tel:+919876543210"
+                    class="text-primary font-semibold flex items-center gap-1 border border-primary px-4 py-2 rounded-lg hover:bg-primary/5 transition-colors">
                     <span class="material-symbols-outlined text-[20px]">call</span> Call Now
                 </a>
-                <a href="https://wa.me/919876543210" target="_blank" class="bg-whatsapp hover:bg-whatsapp-dark text-white px-5 py-2.5 rounded-lg font-semibold flex items-center gap-2 shadow-lg transition-all">
+                <a href="https://wa.me/919876543210" target="_blank"
+                    class="bg-whatsapp hover:bg-whatsapp-dark text-white px-5 py-2.5 rounded-lg font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl transition-all">
                     <span class="material-symbols-outlined text-[20px]">chat</span> WhatsApp
                 </a>
             </div>
+
+            <!-- Mobile Menu Button -->
             <button id="mobile-menu-toggle" class="lg:hidden hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
                 <div class="hamburger-icon">
                     <span></span>
@@ -103,6 +159,7 @@
                 <span class="material-symbols-outlined">close</span>
             </button>
         </div>
+
         <div class="mobile-nav-links">
             <a href="index.html" class="mobile-nav-link">
                 <span class="material-symbols-outlined">home</span> Home
@@ -120,7 +177,9 @@
                 <span class="material-symbols-outlined">mail</span> Contact
             </a>
         </div>
+
         <div class="mobile-menu-divider"></div>
+
         <div class="mobile-menu-contact">
             <div class="mobile-contact-item">
                 <span class="material-symbols-outlined">location_on</span>
@@ -131,6 +190,7 @@
                 Mon-Sun: 8 AM - 8 PM
             </div>
         </div>
+
         <div class="mobile-menu-ctas">
             <a href="tel:+919876543210" class="mobile-cta-btn mobile-cta-call">
                 <span class="material-symbols-outlined">call</span> Call Now
@@ -142,108 +202,553 @@
     </nav>
 
     <main>
-        <!-- Page Header -->
-        <section class="bg-primary py-20 px-6 text-center text-white relative overflow-hidden">
-            <div class="absolute inset-0 opacity-20 bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuAn0SpRYgPBSKXTvhbjlHoHNBz6iEUtwUF1q9vVTkeoFNY99RXKf7q6XJEb-O0Q9_BYF6VBlkL715L8fjq0q1APmQ1OfhXwh1RkeJGc0RTkAQbajq1zYnrdlMYqyCd-m9kjuTVNq4GZW6S6NSlCGJUKhFEHC3lku9Trc2zMZ2rWr52R9SYE7uucqrAwlenoRpV8lb6K5ccLy6pB4FzU-zb-1uhQo6KIrXaUlAe0W8ig9mX5tUZN0DQVDAXSS_s2yaL2XyvNvtHAElBF')] bg-cover bg-center"></div>
-            <div class="relative z-10 max-w-3xl mx-auto animate-fade-up">
-                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Kolhapur's Most Trusted Cleaning Experts</h1>
-                <p class="text-lg md:text-xl opacity-90">Setting the standard for hygiene, reliability, and professionalism in Maharashtra.</p>
+        <!-- Section 1: Cinematic Hero Header Section -->
+        <section class="relative bg-primary py-28 md:py-36 px-6 text-center text-white overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop" 
+                     class="w-full h-full object-cover opacity-20 filter grayscale brightness-50" 
+                     alt="Premium Deep Clean">
+                <div class="absolute inset-0 bg-gradient-to-b from-primary via-primary/95 to-primary"></div>
             </div>
-        </section>
-
-        <!-- Our Story -->
-        <section class="py-20 px-6 max-w-[1400px] mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="rounded-3xl overflow-hidden shadow-2xl relative">
-                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAybKepE4JYT0L2qMlo5-G9z9tRmqP2aBZM3ZZsqPd8txHOUZCLZTV1mUQeCXclGlBk_Zz1pndIe4kfzWkb9tXZG2gGxHAxeOXbbN0FfTzrqvABuguT3LpjcLdCBb_PPo_tDGXtTxm0AjD0T0bIniYSi9NqEcTD5SFremIVgPtuf49ji0DH_jVpBVcfgZaKJqOGJLJkhYyF6m38vsyWvqUN48ypYrKrlhQE3F0EjA3wxQaFpVKq3yuAOr0ju9DI9coTOAv5H8Ij11Y6" class="w-full h-full object-cover" alt="Omraj Cleaning Team">
-                    <div class="absolute bottom-6 left-6 bg-white p-4 rounded-xl shadow-lg flex items-center gap-3">
-                        <span class="material-symbols-outlined text-whatsapp text-4xl" data-weight="fill">verified</span>
-                        <div>
-                            <div class="font-bold text-primary">10+ Years</div>
-                            <div class="text-sm text-on-surface-variant">Of Excellence</div>
-                        </div>
-                    </div>
+            
+            <div class="relative z-10 max-w-4xl mx-auto space-y-6 animate-fade-up">
+                <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-1.5 rounded-full text-xs font-bold text-yellow-400 uppercase tracking-widest mx-auto">
+                    <span class="material-symbols-outlined text-[16px]" data-weight="fill">workspace_premium</span>
+                    Grounded in Trust • Driven by Tech
                 </div>
-                <div>
-                    <h2 class="text-3xl font-bold text-primary mb-6">Our Story</h2>
-                    <p class="text-on-surface-variant text-lg mb-6 leading-relaxed">
-                        Founded in the heart of Kolhapur, Omraj Cleaning Services started with a simple mission: to provide families and businesses with a level of cleanliness that feels truly premium, without the premium hassle. 
-                    </p>
-                    <p class="text-on-surface-variant text-lg mb-8 leading-relaxed">
-                        We noticed that local residents in areas like Tarabai Park and Rajarampuri struggled to find reliable, professional, and well-equipped cleaners. We stepped in to fill that gap. Today, we are proud to be the #1 choice for over 5,000 households across Kolhapur, Ichalkaranji, and Sangli.
-                    </p>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="bg-blue-50 p-6 rounded-2xl">
-                            <h4 class="text-3xl font-bold text-primary mb-1">5000+</h4>
-                            <p class="text-sm font-semibold text-secondary uppercase tracking-wide">Happy Clients</p>
-                        </div>
-                        <div class="bg-blue-50 p-6 rounded-2xl">
-                            <h4 class="text-3xl font-bold text-primary mb-1">50+</h4>
-                            <p class="text-sm font-semibold text-secondary uppercase tracking-wide">Local Experts</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Our Core Values -->
-        <section class="py-20 bg-surface-container border-y border-outline/20">
-            <div class="px-6 max-w-[1400px] mx-auto">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl font-bold text-primary mb-4">What Drives Us</h2>
-                    <p class="text-lg text-on-surface-variant">Our core values are built on trust, transparency, and the desire to create healthy living environments.</p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white p-8 rounded-2xl shadow-soft text-center">
-                        <div class="w-16 h-16 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-green-600 text-3xl" data-weight="fill">shield_person</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-primary mb-3">Integrity & Trust</h3>
-                        <p class="text-on-surface-variant">We treat your home with the utmost respect. All our staff are rigorously background-checked and sourced locally from Kolhapur.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-2xl shadow-soft text-center">
-                        <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-secondary text-3xl" data-weight="fill">workspace_premium</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-primary mb-3">Uncompromising Quality</h3>
-                        <p class="text-on-surface-variant">We don't cut corners; we clean them. Our multi-step inspection process guarantees a spotless finish every time.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-2xl shadow-soft text-center">
-                        <div class="w-16 h-16 mx-auto bg-orange-50 rounded-full flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-orange-500 text-3xl" data-weight="fill">eco</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-primary mb-3">Eco-Conscious</h3>
-                        <p class="text-on-surface-variant">We utilize hospital-grade, environmentally safe chemicals to ensure the health of your family, pets, and the planet.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Final CTA -->
-        <section class="py-16 px-6">
-            <div class="max-w-[1400px] mx-auto bg-primary rounded-3xl p-10 text-center text-white shadow-2xl relative overflow-hidden">
-                <div class="relative z-10">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to experience the Omraj difference?</h2>
-                    <p class="text-lg opacity-90 mb-8">Join thousands of satisfied Kolhapur residents.</p>
-                    <a href="https://wa.me/919876543210" target="_blank" class="inline-flex bg-whatsapp hover:bg-whatsapp-dark text-white px-8 py-4 rounded-xl font-bold text-lg items-center gap-2 shadow-lg transition-transform transform hover:scale-105">
-                        <span class="material-symbols-outlined">chat</span> Book Your First Cleaning
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                    The Future of <span class="text-secondary">Local Services</span>
+                </h1>
+                <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto leading-relaxed text-slate-300">
+                    Om Raj Services is Maharashtra's premier tech-enabled home services platform, delivering highly vetted and background-verified local specialists with institutional-grade standards.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+                    <a href="#booking-timeline" class="bg-secondary hover:bg-secondary/90 text-white px-8 py-3.5 rounded-xl font-bold text-base flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 w-full sm:w-auto">
+                        Configure Your Service <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+                    </a>
+                    <a href="#telemetry-hub" class="bg-white/10 hover:bg-white/25 border border-white/20 text-white px-8 py-3.5 rounded-xl font-bold text-base flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5 w-full sm:w-auto">
+                        View Live Dispatch Telemetry
                     </a>
                 </div>
             </div>
+        </section>
+
+        <!-- Section 2: "Why We Exist" & The Foundation (Story Block) -->
+        <section class="py-24 px-6 max-w-[1400px] mx-auto overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                <!-- Left Side: Overlapping Collage -->
+                <div class="lg:col-span-6 relative h-[480px] sm:h-[550px] w-full">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-secondary/5 to-transparent rounded-3xl blur-2xl"></div>
+                    
+                    <!-- Main Image (ill1.jpg as foundation) -->
+                    <div class="absolute left-4 top-4 w-[65%] sm:w-[60%] aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-outline/30 z-10 hover:scale-[1.01] transition-transform duration-500">
+                        <img src="images/ill1.jpg" alt="Professional cleaning workflow" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent"></div>
+                    </div>
+                    
+                    <!-- Overlapping Image (labour.jpg as active workforce representation) -->
+                    <div class="absolute right-4 bottom-4 w-[55%] sm:w-[50%] aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-20 hover:scale-[1.02] transition-transform duration-500">
+                        <img src="images/labour.jpg" alt="Dedicated cleaning crew" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent"></div>
+                    </div>
+
+                    <!-- Floating Badge overlapping collage (Aadhaar Verified status indicator) -->
+                    <div class="absolute left-[30%] bottom-[20%] bg-white/95 backdrop-blur-md text-primary px-5 py-4 rounded-2xl shadow-2xl border border-outline/30 z-30 flex items-center gap-3 animate-float hover:scale-105 transition-transform">
+                        <div class="w-10 h-10 rounded-full bg-whatsapp/10 flex items-center justify-center text-whatsapp flex-shrink-0">
+                            <span class="material-symbols-outlined text-xl" data-weight="fill">verified_user</span>
+                        </div>
+                        <div>
+                            <div class="text-xl font-black leading-none">100%</div>
+                            <div class="text-[10px] font-bold uppercase tracking-wider text-primary/75">Aadhaar Verified Staff</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Clean Storytelling Copy & Founder Vision -->
+                <div class="lg:col-span-6 space-y-8 animate-fade-up">
+                    <div class="space-y-4">
+                        <div class="text-sm font-bold text-secondary uppercase tracking-widest">Why We Exist</div>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-primary leading-tight">
+                            Home Services <span class="text-secondary">Needed a Reset</span>
+                        </h2>
+                        <p class="text-lg text-on-surface-variant leading-relaxed font-semibold text-slate-800">
+                            We observed the ongoing chaos in traditional local services: unreliable helpers, unpredictable arrival windows, lack of trust, and complete transparency deficits.
+                        </p>
+                        <p class="text-base text-on-surface-variant leading-relaxed">
+                            Founded in the heart of Maharashtra, Om Raj Services was built on a vital mission: to replace unreliable, unvetted service networks with a state-of-the-art tech-enabled platform that guarantees safety for households and stable, dignified livelihoods for local professionals.
+                        </p>
+                        <p class="text-base text-on-surface-variant leading-relaxed">
+                            By combining rigorous official background vetting with intensive hospitality-grade service training, we built a standard that over 5,000 local homes trust daily.
+                        </p>
+                    </div>
+
+                    <!-- Trust Badge Row -->
+                    <div class="grid grid-cols-2 gap-4 border-t border-outline/30 pt-6">
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-whatsapp text-2xl">check_circle</span>
+                            <span class="text-sm font-bold text-primary">No Late Arrivals</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-whatsapp text-2xl">check_circle</span>
+                            <span class="text-sm font-bold text-primary">API Background Verified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: "A Day in the Life" (Frictionless Service Flow & Timeline) -->
+        <section id="booking-timeline" class="py-24 bg-primary text-white border-y border-white/10 relative overflow-hidden">
+            <div class="absolute -left-20 top-20 w-96 h-96 bg-secondary/15 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="px-6 max-w-[1400px] mx-auto space-y-16">
+                <div class="text-center max-w-3xl mx-auto space-y-4">
+                    <div class="inline-block bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 rounded-full text-xs font-bold text-yellow-400 uppercase tracking-widest">
+                        A Day in the Life
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-extrabold leading-tight">
+                        Frictionless Dispatch Journey
+                    </h2>
+                    <p class="text-lg text-white/80 leading-relaxed">
+                        Watch how our high-precision dispatch telemetry routes elite local help to your door in real time.
+                    </p>
+                </div>
+
+                <!-- Timeline Horizontal Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10">
+                    <!-- Step 1 -->
+                    <div class="bg-white/5 border border-white/15 p-6 rounded-2xl relative group hover:bg-white/10 transition-all duration-300">
+                        <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mb-6 font-black text-xl text-white">1</div>
+                        <h3 class="text-lg font-bold mb-2">Booking Created</h3>
+                        <p class="text-white/70 text-sm leading-relaxed">
+                            Select requirements, and our serverless engine registers the service coordinates.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-white/5 border border-white/15 p-6 rounded-2xl relative group hover:bg-white/10 transition-all duration-300">
+                        <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mb-6 font-black text-xl text-white">2</div>
+                        <h3 class="text-lg font-bold mb-2">Expert Assigned</h3>
+                        <p class="text-white/70 text-sm leading-relaxed">
+                            Our geolocation engine instantly locates the nearest verified expert in your municipal zone.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-white/5 border border-white/15 p-6 rounded-2xl relative group hover:bg-white/10 transition-all duration-300">
+                        <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mb-6 font-black text-xl text-white">3</div>
+                        <h3 class="text-lg font-bold mb-2">Live Tracking Enabled</h3>
+                        <p class="text-white/70 text-sm leading-relaxed">
+                            Receive helper credentials and active GPS tracking coordinates directly on your phone.
+                        </p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="bg-white/5 border border-white/15 p-6 rounded-2xl relative group hover:bg-white/10 transition-all duration-300">
+                        <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mb-6 font-black text-xl text-white">4</div>
+                        <h3 class="text-lg font-bold mb-2">Service Completed</h3>
+                        <p class="text-white/70 text-sm leading-relaxed">
+                            Sit back as professionals utilize specialized hospital-grade tools for a spotless home.
+                        </p>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="bg-white/5 border border-white/15 p-6 rounded-2xl relative group hover:bg-white/10 transition-all duration-300">
+                        <div class="w-12 h-12 bg-whatsapp rounded-xl flex items-center justify-center mb-6 font-black text-xl text-white">5</div>
+                        <h3 class="text-lg font-bold mb-2">Customer Rated</h3>
+                        <p class="text-white/70 text-sm leading-relaxed">
+                            Confirm absolute satisfaction, leaving ratings to complete the secure dispatch loop.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: The Technology & Verification Hub (Tech & Verification with Telemetry Simulator) -->
+        <section id="telemetry-hub" class="py-24 bg-slate-950 text-white relative overflow-hidden">
+            <div class="absolute -right-20 top-20 w-96 h-96 bg-whatsapp/5 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="px-6 max-w-[1400px] mx-auto space-y-16">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                    
+                    <!-- Left Side: Verification Credentials & Details -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div class="space-y-4">
+                            <div class="inline-block bg-whatsapp/15 border border-whatsapp/30 px-4 py-1 rounded-full text-xs font-bold text-whatsapp uppercase tracking-wider">
+                                Secure Infrastructure
+                            </div>
+                            <h2 class="text-3xl md:text-5xl font-extrabold leading-tight">
+                                Built for Speed. <br><span class="text-secondary">Engineered for Trust.</span>
+                            </h2>
+                            <p class="text-slate-400 leading-relaxed">
+                                Behind each local booking is our automated API security gateway. We verify official Aadhaar credentials and PAN cards instantly, cross-checking database records prior to scheduling.
+                            </p>
+                        </div>
+
+                        <!-- Highlights list -->
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-white/5 border border-white/15 flex items-center justify-center text-secondary">
+                                    <span class="material-symbols-outlined">shield_person</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white">100% Background Checked</h4>
+                                    <p class="text-xs text-slate-400">Database security gateway audits every address and background profile.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-white/5 border border-white/15 flex items-center justify-center text-secondary">
+                                    <span class="material-symbols-outlined">network_check</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white">Live Geofenced Routing</h4>
+                                    <p class="text-xs text-slate-400">Serverless telemetry matches requests in Tarabai Park & Rajarampuri with zero latency.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Interactive Geofenced Telemetry Simulator Console -->
+                    <div class="lg:col-span-7 bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-2xl relative">
+                        <!-- Console Header -->
+                        <div class="bg-slate-950/80 px-6 py-4 flex items-center justify-between border-b border-slate-800">
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                                <span class="text-xs font-mono text-slate-400 ml-2">omraj-dispatch-telemetry v2.0.4</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-whatsapp animate-pulse"></span>
+                                <span class="text-[10px] font-bold text-whatsapp uppercase tracking-wider">ALL SYSTEMS ONLINE</span>
+                            </div>
+                        </div>
+
+                        <!-- Console Output Screen -->
+                        <div class="p-6 font-mono text-xs space-y-3 h-[280px] overflow-y-auto text-slate-300" id="terminal-screen">
+                            <div class="text-slate-500">// Welcome to Om Raj Dispatch Telemetry terminal simulator.</div>
+                            <div class="text-slate-500">// Click one of the simulation triggers below to test live geofencing dispatch routing.</div>
+                            <div class="text-secondary">[Ready] Waiting for system instruction...</div>
+                        </div>
+
+                        <!-- Console Control Panel -->
+                        <div class="bg-slate-950 p-6 border-t border-slate-800 flex flex-wrap gap-4 items-center justify-between">
+                            <div class="flex gap-2">
+                                <button onclick="runDispatchCheck()" class="bg-secondary hover:bg-secondary/90 text-white font-bold px-4 py-2.5 rounded-lg text-xs transition-colors flex items-center gap-1.5">
+                                    <span class="material-symbols-outlined text-[16px]">play_arrow</span> Test Routing Engine
+                                </button>
+                                <button onclick="simulateLiveDispatch()" class="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold px-4 py-2.5 rounded-lg text-xs transition-colors flex items-center gap-1.5">
+                                    <span class="material-symbols-outlined text-[16px]">sensors</span> Simulate Live Dispatch
+                                </button>
+                            </div>
+                            <button onclick="clearConsole()" class="text-slate-400 hover:text-white text-xs underline font-mono">
+                                Clear Console
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <script>
+                const terminal = document.getElementById('terminal-screen');
+                
+                function addConsoleLine(text, type = 'info') {
+                    const line = document.createElement('div');
+                    line.className = 'py-0.5 animate-fade-up';
+                    
+                    if (type === 'success') {
+                        line.innerHTML = `<span class="text-whatsapp">✓</span> ${text}`;
+                    } else if (type === 'error') {
+                        line.innerHTML = `<span class="text-red-500">✗</span> ${text}`;
+                    } else if (type === 'header') {
+                        line.innerHTML = `<span class="text-secondary font-bold">[SYSTEM]</span> ${text}`;
+                    } else {
+                        line.innerHTML = `<span class="text-slate-500">»</span> ${text}`;
+                    }
+                    
+                    terminal.appendChild(line);
+                    terminal.scrollTop = terminal.scrollHeight;
+                }
+
+                function runDispatchCheck() {
+                    addConsoleLine('Initiating severless dispatch telemetry test...', 'header');
+                    setTimeout(() => addConsoleLine('Scanning active geofenced grids in Kolhapur, Sangli & Ichalkaranji...', 'info'), 300);
+                    setTimeout(() => addConsoleLine('Connected to Government Aadhaar/PAN validation gateway. Status: SECURE', 'success'), 700);
+                    setTimeout(() => addConsoleLine('Active dispatch channels: 14 crew vehicles geolocated.', 'info'), 1100);
+                    setTimeout(() => addConsoleLine('Avg dispatch Latency verified: 1.34s (Target: < 2.00s)', 'success'), 1500);
+                    setTimeout(() => addConsoleLine('Routing validation completed successfully.', 'success'), 1800);
+                }
+
+                function simulateLiveDispatch() {
+                    addConsoleLine('Live Booking Dispatch Event Triggered.', 'header');
+                    setTimeout(() => addConsoleLine('Request received from Tarabai Park coordinate zone...', 'info'), 400);
+                    setTimeout(() => addConsoleLine('Calculating geofence proximity metrics...', 'info'), 800);
+                    setTimeout(() => addConsoleLine('Nearest active crew matching ID OM-402 found at 1.4km.', 'success'), 1200);
+                    setTimeout(() => addConsoleLine('Aadhaar API gate validation response: SECURE (100% match)', 'success'), 1600);
+                    setTimeout(() => addConsoleLine('Dispatched Professional: Amol Kamble assigned to job.', 'success'), 2000);
+                    setTimeout(() => addConsoleLine('Active GPS tracking link sent to customer phone.', 'success'), 2400);
+                }
+
+                function clearConsole() {
+                    terminal.innerHTML = '<div class="text-slate-500">// Terminal cleared. Waiting for actions...</div>';
+                }
+            </script>
+        </section>
+
+        <!-- Section 5: The Human Element & Standards (Meet Experts & Comparison) -->
+        <section class="py-24 px-6 max-w-[1400px] mx-auto space-y-20">
+            <!-- Part A: Meet Our Experts -->
+            <div class="space-y-12">
+                <div class="text-center max-w-3xl mx-auto space-y-4">
+                    <div class="text-sm font-bold text-secondary uppercase tracking-widest">Our Service Academy</div>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-primary leading-tight">
+                        Meet Our Elite Specialists
+                    </h2>
+                    <p class="text-lg text-on-surface-variant leading-relaxed">
+                        Every professional undergoes 40+ hours of advanced machinery and behavior training before matching your private space.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Expert 1 -->
+                    <div class="bg-white border border-outline/30 p-6 rounded-3xl shadow-soft hover:shadow-hover transition-all duration-300 group">
+                        <div class="relative w-full aspect-square rounded-2xl overflow-hidden mb-6 bg-slate-100">
+                            <!-- Premium Realistic Indian Helper image -->
+                            <img src="images/expert1.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Sunita Patil">
+                            <div class="absolute top-4 right-4 bg-whatsapp text-white text-[10px] font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span> ACTIVE & VERIFIED
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-primary">Sunita Patil</h3>
+                                <p class="text-xs text-secondary font-semibold">Deep Cleaning Specialist • ID #OM-882</p>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded flex items-center gap-0.5">
+                                <span class="material-symbols-outlined text-[14px]">star</span> 4.95
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-500 leading-relaxed mb-4">
+                            Master of hospital-grade deep sanitization systems with over 200+ flawless local customer ratings.
+                        </p>
+                    </div>
+
+                    <!-- Expert 2 -->
+                    <div class="bg-white border border-outline/30 p-6 rounded-3xl shadow-soft hover:shadow-hover transition-all duration-300 group">
+                        <div class="relative w-full aspect-square rounded-2xl overflow-hidden mb-6 bg-slate-100">
+                            <img src="images/expert2.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Amol Kamble">
+                            <div class="absolute top-4 right-4 bg-whatsapp text-white text-[10px] font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span> ACTIVE & VERIFIED
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-primary">Amol Kamble</h3>
+                                <p class="text-xs text-secondary font-semibold">Kitchen Sanitization Expert • ID #OM-402</p>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded flex items-center gap-0.5">
+                                <span class="material-symbols-outlined text-[14px]">star</span> 4.92
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-500 leading-relaxed mb-4">
+                            Specializes in complex grease extraction, pressure systems, and non-toxic biodegradable sanitizers.
+                        </p>
+                    </div>
+
+                    <!-- Expert 3 -->
+                    <div class="bg-white border border-outline/30 p-6 rounded-3xl shadow-soft hover:shadow-hover transition-all duration-300 group">
+                        <div class="relative w-full aspect-square rounded-2xl overflow-hidden mb-6 bg-slate-100">
+                            <img src="images/expert3.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Ramesh Shinde">
+                            <div class="absolute top-4 right-4 bg-whatsapp text-white text-[10px] font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span> ACTIVE & VERIFIED
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-primary">Ramesh Shinde</h3>
+                                <p class="text-xs text-secondary font-semibold">Sofa & Carpet Specialist • ID #OM-511</p>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded flex items-center gap-0.5">
+                                <span class="material-symbols-outlined text-[14px]">star</span> 4.88
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-500 leading-relaxed mb-4">
+                            Expert in wet upholstery extraction tools, delicate fabric sanitizing, and fiber protection treatments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part B: Standards Comparison -->
+            <div class="bg-slate-50 border border-outline/30 rounded-3xl p-8 md:p-12">
+                <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+                    <h3 class="text-2xl font-black text-primary">Traditional Help vs. Om Raj Standards</h3>
+                    <p class="text-sm text-slate-500">Why thousands of families are upgrading to professional service architectures.</p>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse min-w-[600px]">
+                        <thead>
+                            <tr class="border-b border-outline">
+                                <th class="py-4 text-sm font-bold uppercase text-slate-400">Feature Comparison</th>
+                                <th class="py-4 text-sm font-bold uppercase text-red-500">Traditional Agency</th>
+                                <th class="py-4 text-sm font-bold uppercase text-whatsapp">Om Raj Services</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-outline/40 font-medium text-primary">
+                            <tr>
+                                <td class="py-4 text-sm">Background Security</td>
+                                <td class="py-4 text-xs text-slate-500">None or unreliable phone reference checks</td>
+                                <td class="py-4 text-sm font-bold text-whatsapp">Aadhaar & PAN API database clearance</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 text-sm">Punctuality</td>
+                                <td class="py-4 text-xs text-slate-500">Frequent delays, unexplained cancellations</td>
+                                <td class="py-4 text-sm font-bold text-whatsapp">15-min dispatch average, active telemetry tracking</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 text-sm">Equipment Used</td>
+                                <td class="py-4 text-xs text-slate-500">Standard household cloths and unvetted chemicals</td>
+                                <td class="py-4 text-sm font-bold text-whatsapp">Hospital-grade non-toxic sanitizing compounds</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 text-sm">Pricing Integrity</td>
+                                <td class="py-4 text-xs text-slate-500">Delayed billing, verbal arguments on fees</td>
+                                <td class="py-4 text-sm font-bold text-whatsapp">100% transparent pricing before checkout</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Trust Proof & Resolution (FAQs & Local Impact) -->
+        <section class="py-24 bg-primary text-white relative overflow-hidden">
+            <div class="absolute -left-20 top-20 w-96 h-96 bg-secondary/15 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="px-6 max-w-[1400px] mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                    
+                    <!-- Left Side: Local Impact & FounderQuote -->
+                    <div class="lg:col-span-5 space-y-12">
+                        <div class="space-y-4">
+                            <div class="inline-block bg-white/10 border border-white/20 px-4 py-1.5 rounded-full text-xs font-bold text-yellow-400 uppercase tracking-widest">
+                                Social Mission & Telemetry
+                            </div>
+                            <h2 class="text-3xl md:text-5xl font-extrabold leading-tight">
+                                Rooted in local <br><span class="text-secondary">Community Impact</span>
+                            </h2>
+                            <p class="text-white/70 leading-relaxed text-sm">
+                                We believe in raising the status of service professionals. That is why our platform secures fair wages, continuous health protection, and institutional career paths for over 500+ professionals.
+                            </p>
+                        </div>
+
+                        <!-- Statistics Grid -->
+                        <div class="grid grid-cols-2 gap-6 border-y border-white/10 py-8">
+                            <div>
+                                <div class="text-3xl font-black text-secondary">₹1.2Cr+</div>
+                                <p class="text-xs text-white/60 mt-1">Directed back into local household salaries.</p>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-black text-whatsapp">500+</div>
+                                <p class="text-xs text-white/60 mt-1">Certified service academy graduates.</p>
+                            </div>
+                        </div>
+
+                        <!-- Founder Signature block -->
+                        <div class="bg-white/5 border border-white/10 p-6 rounded-2xl relative">
+                            <span class="material-symbols-outlined text-4xl text-secondary/20 absolute top-4 right-4">format_quote</span>
+                            <p class="italic text-sm text-white/90 leading-relaxed mb-4">
+                                "We don't just dispatch helpers. We deploy highly trained, respected, and government-verified local service professionals who care about your peace of mind."
+                            </p>
+                            <div>
+                                <div class="font-bold text-sm text-white">Chief Product Architect</div>
+                                <div class="text-xs text-white/60">Om Raj Services</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: FAQ Accordion list -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="space-y-2 mb-6">
+                            <h3 class="text-2xl font-bold">Frequently Asked Questions</h3>
+                            <p class="text-xs text-white/60">Clear, transparent answers about how our systems verify help.</p>
+                        </div>
+
+                        <!-- Accordions -->
+                        <div class="space-y-4 font-sans">
+                            <!-- FAQ 1 -->
+                            <div class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden transition-all duration-300">
+                                <button onclick="toggleAccordion('faq1')" class="w-full p-6 text-left flex justify-between items-center gap-4 hover:bg-white/10 transition-colors">
+                                    <span class="font-bold text-sm">Do I need to supply any cleaning tools or solutions?</span>
+                                    <span id="faq1-icon" class="material-symbols-outlined text-white/60 transition-transform duration-300">expand_more</span>
+                                </button>
+                                <div id="faq1" class="hidden px-6 pb-6 text-xs text-white/70 leading-relaxed border-t border-white/5 pt-4">
+                                    No. Our professional crew comes fully equipped with hospital-grade sanitizers, premium vacuum machinery, microfiber fabrics, and pet-friendly biodegradable cleaning solutions.
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden transition-all duration-300">
+                                <button onclick="toggleAccordion('faq2')" class="w-full p-6 text-left flex justify-between items-center gap-4 hover:bg-white/10 transition-colors">
+                                    <span class="font-bold text-sm">How do you verify your helper professionals?</span>
+                                    <span id="faq2-icon" class="material-symbols-outlined text-white/60 transition-transform duration-300">expand_more</span>
+                                </button>
+                                <div id="faq2" class="hidden px-6 pb-6 text-xs text-white/70 leading-relaxed border-t border-white/5 pt-4">
+                                    We run double-layer identity checks through official database APIs, matching government Aadhaar cards, PAN records, and local address credentials. Each profile is also cross-checked through official police record registries.
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden transition-all duration-300">
+                                <button onclick="toggleAccordion('faq3')" class="w-full p-6 text-left flex justify-between items-center gap-4 hover:bg-white/10 transition-colors">
+                                    <span class="font-bold text-sm">What happens if I need to reschedule?</span>
+                                    <span id="faq3-icon" class="material-symbols-outlined text-white/60 transition-transform duration-300">expand_more</span>
+                                </button>
+                                <div id="faq3" class="hidden px-6 pb-6 text-xs text-white/70 leading-relaxed border-t border-white/5 pt-4">
+                                    You can reschedule instantly through our support portal or WhatsApp channel up to 4 hours before the requested slot with zero cancellation fees.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <script>
+                function toggleAccordion(id) {
+                    const content = document.getElementById(id);
+                    const icon = document.getElementById(id + '-icon');
+                    
+                    if (content.classList.contains('hidden')) {
+                        content.classList.remove('hidden');
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        content.classList.add('hidden');
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                }
+            </script>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-primary text-white border-t border-white/10 pt-20 pb-24 md:pb-10">
         <div class="max-w-[1400px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <!-- Brand Column -->
             <div>
                 <a href="index.html" class="text-2xl font-bold text-white flex items-center gap-2 mb-6">
-                    <span class="material-symbols-outlined text-secondary text-3xl" data-weight="fill">cleaning_services</span>
+                    <span class="material-symbols-outlined text-secondary text-3xl"
+                        data-weight="fill">cleaning_services</span>
                     Omraj Cleaning
                 </a>
-                <p class="text-white/70 mb-6 leading-relaxed">Premium, reliable, and professional deep cleaning services dedicated to families and businesses in Kolhapur, Sangli, and Ichalkaranji.</p>
+                <p class="text-white/70 mb-6 leading-relaxed">
+                    Premium, reliable, and tech-enabled local cleaning services dedicated to families and businesses in Kolhapur, Sangli, and Ichalkaranji.
+                </p>
             </div>
+
+            <!-- Quick Links -->
             <div>
                 <h4 class="text-lg font-bold mb-6 border-b border-white/20 pb-2 inline-block">Quick Links</h4>
                 <ul class="space-y-3">
@@ -254,6 +759,8 @@
                     <li><a href="contact.html" class="text-white/70 hover:text-white hover:underline transition-all">Contact Us</a></li>
                 </ul>
             </div>
+
+            <!-- Top Services -->
             <div>
                 <h4 class="text-lg font-bold mb-6 border-b border-white/20 pb-2 inline-block">Top Services</h4>
                 <ul class="space-y-3">
@@ -262,6 +769,8 @@
                     <li><a href="our-services.html" class="text-white/70 hover:text-white transition-all flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">chevron_right</span> Water Tank Cleaning</a></li>
                 </ul>
             </div>
+
+            <!-- Contact Info -->
             <div>
                 <h4 class="text-lg font-bold mb-6 border-b border-white/20 pb-2 inline-block">Contact Info</h4>
                 <ul class="space-y-4">
@@ -280,6 +789,7 @@
                 </ul>
             </div>
         </div>
+
         <div class="max-w-[1400px] mx-auto px-6 text-center text-white/50 text-sm pt-8 border-t border-white/10">
             &copy; <script>document.write(new Date().getFullYear())</script> Omraj Cleaning Services. All rights reserved.
         </div>
