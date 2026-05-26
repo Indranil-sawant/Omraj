@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="mobile-nav.css" />
     
     <script id="tailwind-config">
         tailwind.config = {
@@ -47,7 +48,7 @@
     </div>
 
     <!-- Sticky Header -->
-    <header class="sticky top-0 w-full z-50 shadow-sm bg-white/95 backdrop-blur-md">
+    <header id="site-header" class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md">
         <nav class="flex justify-between items-center w-full px-6 max-w-[1400px] mx-auto h-20">
             <a href="index.html" class="text-2xl font-bold text-primary flex items-center gap-2">
                 <span class="material-symbols-outlined text-secondary text-3xl" data-weight="fill">cleaning_services</span>
@@ -65,9 +66,67 @@
                     <span class="material-symbols-outlined text-[20px]">chat</span> WhatsApp
                 </a>
             </div>
-            <button class="lg:hidden text-primary"><span class="material-symbols-outlined text-3xl">menu</span></button>
+            <button id="mobile-menu-toggle" class="lg:hidden hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
         </nav>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay" aria-hidden="true"></div>
+
+    <!-- Mobile Menu Panel -->
+    <nav id="mobile-menu" class="mobile-menu-panel" role="navigation" aria-label="Mobile navigation" aria-hidden="true" tabindex="-1">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="mobile-menu-logo">
+                <span class="material-symbols-outlined" data-weight="fill">cleaning_services</span>
+                Omraj Cleaning
+            </a>
+            <button id="mobile-menu-close" class="mobile-menu-close-btn" aria-label="Close navigation menu">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">
+                <span class="material-symbols-outlined">home</span> Home
+            </a>
+            <a href="about-us.html" class="mobile-nav-link">
+                <span class="material-symbols-outlined">info</span> About Us
+            </a>
+            <a href="our-services.html" class="mobile-nav-link active-page">
+                <span class="material-symbols-outlined">cleaning_services</span> Services
+            </a>
+            <a href="gallery.html" class="mobile-nav-link">
+                <span class="material-symbols-outlined">photo_library</span> Gallery
+            </a>
+            <a href="contact.html" class="mobile-nav-link">
+                <span class="material-symbols-outlined">mail</span> Contact
+            </a>
+        </div>
+        <div class="mobile-menu-divider"></div>
+        <div class="mobile-menu-contact">
+            <div class="mobile-contact-item">
+                <span class="material-symbols-outlined">location_on</span>
+                Serving Kolhapur, Sangli & Ichalkaranji
+            </div>
+            <div class="mobile-contact-item">
+                <span class="material-symbols-outlined">schedule</span>
+                Mon-Sun: 8 AM - 8 PM
+            </div>
+        </div>
+        <div class="mobile-menu-ctas">
+            <a href="tel:+919876543210" class="mobile-cta-btn mobile-cta-call">
+                <span class="material-symbols-outlined">call</span> Call Now
+            </a>
+            <a href="https://wa.me/919876543210" target="_blank" class="mobile-cta-btn mobile-cta-whatsapp">
+                <span class="material-symbols-outlined">chat</span> WhatsApp Us
+            </a>
+        </div>
+    </nav>
 
     <main>
         <!-- Page Header -->
@@ -161,5 +220,6 @@
     <a href="https://wa.me/919876543210" target="_blank" class="hidden md:flex fixed bottom-8 right-8 z-[100] bg-whatsapp text-white w-16 h-16 rounded-full shadow-2xl items-center justify-center hover:scale-110 active:scale-95 transition-all">
         <span class="material-symbols-outlined text-[36px]">chat</span>
     </a>
+    <script src="mobile-nav.js" defer></script>
 </body>
 </html>
